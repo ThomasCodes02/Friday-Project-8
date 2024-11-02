@@ -1,12 +1,12 @@
 import sqlite3
 
-# Connect to (or create) the database file
+# Create Database Name
 conn = sqlite3.connect('customer_feedback.db')
 
-# Create a cursor to interact with the database
+# Cursor
 cursor = conn.cursor()
 
-# SQL command to create the feedback table
+# Create the Table for Feedback
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS feedback (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
